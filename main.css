@@ -1,0 +1,193 @@
+/* applies to entire portfolio */
+body{
+    background-color: rgb(3, 3, 56);
+    margin: 0;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+        /* nav bar */
+
+#nav-box{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2%;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(3, 3, 56,0.5);
+    z-index: 999;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    align-items: center;
+    line-height: 30px;
+}
+
+.navLink{
+    color: white;
+    font-size: 20px;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    text-decoration: unset;
+}
+
+.currentNavLink{
+    color: white;
+    font-size: 20px;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    transform: translateY(2px);
+    box-shadow: 0px -2px black;
+}
+
+.navLink:hover{
+    background-color:rgb(11, 6, 148);
+}
+
+/* used on most pages to put in column */
+
+.page2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+}
+                    /* firstpage */
+
+/* Sets pic and boxes side by side */
+#one{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 2%;
+    padding-top: 5%;
+}
+
+/* puts boxes in columns to the right */
+#page1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* keep pic from shrinking */
+
+#picContainer{
+    width: 300px;
+    height: 600px;
+}
+
+#myPic{
+    width: 250px;
+    height: 500px;
+    box-shadow: 0px 0px 2px 2px black;
+}
+
+/* design of boxes */
+
+.sec{
+    margin-bottom: 1%;
+    padding: 1%;
+    background-color: transparent;
+    width: 90%;
+    color: white;
+}
+
+                /* second page */
+
+/* design for each box */
+
+.skills-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    color:white;
+    margin-bottom: 2%;
+}
+
+.sub-head{
+    text-decoration: underline;
+    margin: 1%;
+    font-style: italic;
+}
+
+.info{
+    margin: 0;
+    font-size: 75%;
+}
+
+/* puts columns side by side */
+
+.skills-column{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 1%;
+    width: 100%;
+}
+
+/* creates columns */
+
+.columnss{
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+}
+
+    /* dropdown text */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2%;
+  }
+
+  /* design of what drops */
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(225, 236, 236);
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 1%;
+    z-index: 1;
+    color: rgb(11, 6, 148);
+    font-size: 50%;
+    border: solid;
+    border-color: rgb(11, 6, 148);
+    margin-top: 3px;
+  }
+  
+  /* shows dropdown content */
+  .dropdown:hover {color:rgb(11, 6, 148)}
+  .dropdown:hover .dropdown-content {display: block;}
+
+  .logos{
+      width: 150px;
+      height: 150px;
+      background-color: aliceblue;
+      box-shadow: 5px 5px black;
+  }
+
+/* Final page */
+ 
+.contact-container{
+padding-top: 5%;
+display: flex;
+justify-content: center;
+}
+
+#contact-box{
+    font-size: 200%;
+    background-color: rgb(17, 56, 247);
+    padding: 10px;
+    color: white;
+    box-shadow: 10px 10px 5px black;
+    width: 80%;
+}
