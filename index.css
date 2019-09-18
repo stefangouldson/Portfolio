@@ -19,7 +19,7 @@ body{
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
 }
-
+ 
 #content{
     border: solid;
     position: fixed;
