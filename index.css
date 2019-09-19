@@ -21,9 +21,8 @@ body{
 }
 
 #content{
-    border: solid;
     position: fixed;
-    top: 10%;
+    bottom: 0%;
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     width: 95%;
@@ -31,6 +30,13 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: fadeIn 2s
+}
+
+h1 {opacity: 0;
+    animation: fadeInUp 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 
 #welcome{
@@ -44,6 +50,10 @@ body{
     text-align: center;
     width: 40%;
     font-size: 150%;
+    opacity: 0;
+    animation: fadeIn 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
 }
 
 #welcome:hover{
@@ -53,3 +63,28 @@ body{
 #welcome:active{
     transform: translateY(4px);
 }
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 50%, 0);
+      transform: translate3d(0, 50%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }

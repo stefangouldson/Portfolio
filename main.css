@@ -76,13 +76,13 @@ body{
 /* keep pic from shrinking */
 
 #picContainer{
-    width: 300px;
-    height: 600px;
+    width: 400px;
+    height: 800px;
 }
 
 #myPic{
-    width: 250px;
-    height: 500px;
+    width: 350px;
+    height: 700px;
     box-shadow: 0px 0px 2px 2px black;
     object-fit: cover;
 }
@@ -185,6 +185,25 @@ animation: fadeInUp 1s
       box-shadow: 5px 5px black;
   }
 
+  /* 3rd page */
+
+  #git-box{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      animation: fadeIn 2s;
+  }
+.gititle{
+    text-align: center;
+    margin-top: 5%;
+    color: white;
+}
+.git{
+    width: 400px;
+    height: 400px;
+}
+
 
 /* Final page */
  
@@ -192,6 +211,7 @@ animation: fadeInUp 1s
 padding-top: 5%;
 display: flex;
 justify-content: center;
+animation: fadeIn 2s;
 }
 
 #contact-box{
