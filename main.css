@@ -50,13 +50,7 @@ body{
 
 /* used on most pages to put in column */
 
-.page2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 3%;
-    font-size: 150%;
-}
+
                     /* firstpage */
 
 /* Sets pic and boxes side by side */
@@ -66,6 +60,7 @@ body{
     justify-content: flex-start;
     padding: 1%;
     padding-top: 5%;
+    animation: fadeInLeft 1s
 }
 
 /* puts boxes in columns to the right */
@@ -104,6 +99,15 @@ body{
 
                 /* second page */
 
+.page2{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 3%;
+font-size: 150%;
+animation: fadeInUp 1s
+}
+
 /* design for each box */
 
 .skills-box{
@@ -112,7 +116,7 @@ body{
     align-items: center;
     width: 80%;
     color:white;
-    margin-bottom: 2%;
+    margin-bottom: 10%;
 }
 
 .sub-head{
@@ -181,6 +185,7 @@ body{
       box-shadow: 5px 5px black;
   }
 
+
 /* Final page */
  
 .contact-container{
@@ -197,3 +202,45 @@ justify-content: center;
     box-shadow: 10px 10px 5px black;
     width: 80%;
 }
+
+
+
+/* animations */
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-5%, 0, 0);
+      transform: translate3d(-5%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 10%, 0);
+      transform: translate3d(0, 10%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
