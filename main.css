@@ -265,3 +265,83 @@ animation: fadeIn 2s;
       transform: translate3d(0, 0, 0);
     }
   }
+
+  /* media queries */
+  
+  @media only screen and (max-width:700px){
+        
+    #nav-box{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .navBar{
+        width: 100%;
+    }
+
+    .navLink{
+        font-size: 10px;
+    }
+
+    .currentNavLink{
+        font-size: 10px;
+        width: 26%;
+    }
+
+    /* page 1 */
+
+      #one{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+
+      p{
+          font-size: 75%;
+      }
+
+      #picContainer{
+          width: 300px;
+          height: 600px;
+          margin-bottom: 3%;
+      }
+      #myPic{
+          margin-top: 5%;
+          width: 300px;
+          height: 600px;
+      }
+
+    /* page 2 */
+
+    .logos{
+        width: 50px;
+        height: 50px;
+    }
+
+    #page2{
+        font-size: 75%;
+    }
+
+    .skills-box{
+        margin-top: 20px;
+    }
+
+    .sub-head{
+        font-size: 50%;
+    }
+
+    .info{
+        opacity: 0;
+        height: 0px;
+        font-size: 0px;
+    }
+
+    .dropdown{
+        font-size: 50%;
+    }
+
+    #contact-box{
+        margin-top: 30px;
+        font-size: 80%;
+    }
+  }

@@ -89,3 +89,20 @@ h1 {opacity: 0;
       transform: translate3d(0, 0, 0);
     }
   }
+
+  /* media quries to make website suitable for mobile/tv */
+
+  @media only screen and (max-width:700px){
+    #content{
+      height: 100%;
+      padding: 0;
+      text-align: center;
+      padding:1%;
+    }
+  }
+
+  @media only screen and (min-width:2000px){
+    #content{
+      font-size: 200%;
+    }
+  }
